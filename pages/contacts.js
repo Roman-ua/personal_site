@@ -1,26 +1,30 @@
-import NextLink from "next/link";
-import {Button, useColorModeValue, ButtonGroup, Image, Container} from "@chakra-ui/react";
-import {ChevronRightIcon} from "@chakra-ui/icons";
+import {useColorModeValue, Image, Container} from "@chakra-ui/react";
+import ContactsItemWrapper from "../components/contacts/contactsItemWrapper";
+import {contacts_data} from "../constants/default_data";
 
+
+const renderItemContact = () => {
+  return contacts_data.map((item)=>{
+    return(
+      <ContactsItemWrapper key={item.className} route={item.link}>
+        <div className={`back_ground ${item.className}`}/>
+        <Image
+          maxW={item.maxW}
+          src={useColorModeValue(`/icons/white/${item.iconWhite}`, `/icons/dark/${item.iconBlack}`)}/>
+      </ContactsItemWrapper>
+    )
+  })
+}
 const Contacts = () => {
   return (
-    <Container>
-      <ButtonGroup>
-        <NextLink href={'/'}>
-          <Image maxW={'60px'} src={useColorModeValue('/icons/white/white-github.png', '/icons/dark/dark-github.png')}/>
-        </NextLink>
-        <NextLink href={'/'}>
-          <Image maxW={'60px'} src={useColorModeValue('/icons/white/white-linkedin.png', '/icons/dark/dark-linkedin.png')}/>
-        </NextLink>
-        <NextLink href={'/'}>
-          <Image maxW={'60px'} src={useColorModeValue('/icons/white/white-telegram.png', '/icons/dark/dark-telegram.png')}/>
-        </NextLink>
-        <NextLink href={'/'}>
-          <Image maxW={'60px'} src={useColorModeValue('/icons/white/white-google.png', '/icons/dark/dark-google.png')}/>
-        </NextLink>
-      </ButtonGroup>
+    <Container
+      mt={'7%'}
+      alignItems={'center'}
+      display={'flex'}
+      flexDir={'row'}
+      justifyContent={'space-between'}>
+      {renderItemContact()}
     </Container>
-
   )
 }
 
