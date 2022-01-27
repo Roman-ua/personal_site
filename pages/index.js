@@ -5,6 +5,7 @@ import Work from "../components/homePage/work/work";
 import Bio from "../components/homePage/BIO/bio";
 import Like from "../components/homePage/ILike/like";
 import TechStack from "../components/homePage/techStack/techStack";
+import Copyright from "../components/_shared/copyright";
 
 const HomePage = ({Component, pageProps, router}) => {
   return (
@@ -17,6 +18,7 @@ const HomePage = ({Component, pageProps, router}) => {
       <Work />
       <Bio />
       <Like />
+      <Copyright />
     </Container>
   )
 }
