@@ -51,3 +51,23 @@ export const tech_stack_data = [
     stack: 'Git / GitLab / BitBucket / Jira / Trello'
   },
 ]
+
+
+export const bio_data = [
+  {
+    year: '1994',
+    data: 'Born in Zaporozhye, Ukraine'
+  },
+  {
+    year: '2017',
+    data: 'Complete, Dnipro National University, Faculty of Applied Math, masters degree'
+  },
+  {
+    year: '2020',
+    data: 'Works as a freelance'
+  },
+  {
+    year: '2021 to present',
+    data: 'I work as a front-end developer at Lunka company'
+  },
+]
