@@ -52,7 +52,7 @@ const ThreeDModel = () => {
 
       //  640->240
       //  8->6
-      const scale = scH * 0.005 + 35
+      const scale = scH * 0.005 + 9
       const camera = new THREE.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 50000)
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -65,7 +65,7 @@ const ThreeDModel = () => {
       controls.target = target
       _setControls(controls)
 
-      loadGLTFModel(scene, '/images/toroto.glb', {
+      loadGLTFModel(scene, '/images/scene.gltf', {
         receiveShadow: false,
         castShadow: false
       }).then(()=>{

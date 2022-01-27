@@ -2,6 +2,20 @@ import {Heading, Image, Text, useColorModeValue} from "@chakra-ui/react";
 import ContentWrapper from "../../_shared/contentWrapper";
 import {BioSection, BioYear} from "./bioStyled";
 import Section from "../../_shared/section";
+import {bio_data} from "../../../constants/default_data";
+
+const renderItemBio = () => {
+  return bio_data.map((item) => {
+    return(
+      <ContentWrapper key={item.year}>
+        <BioSection>
+          <BioYear>{item.year}</BioYear>
+          {item.data}
+        </BioSection>
+      </ContentWrapper>
+    )
+  })
+}
 
 const Bio = () => {
   return (
@@ -9,31 +23,7 @@ const Bio = () => {
       <Heading as={'h3'} variant={'section-title'}>
         BIO
       </Heading>
-      <ContentWrapper>
-        <BioSection>
-          <BioYear>1994</BioYear>
-          Born in Zaporozhye, Ukraine
-        </BioSection>
-      </ContentWrapper>
-      <ContentWrapper>
-        <BioSection>
-          <BioYear>2017</BioYear>
-          Complete, Dnipro National University,
-          Faculty of Applied Math, masters degree
-        </BioSection>
-      </ContentWrapper>
-      <ContentWrapper>
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Works as a freelance
-        </BioSection>
-      </ContentWrapper>
-      <ContentWrapper>
-        <BioSection>
-          <BioYear>2021 to present</BioYear>
-          I work as a front-end developer at Lunka company
-        </BioSection>
-      </ContentWrapper>
+      {renderItemBio()}
     </Section>
   )
 }
