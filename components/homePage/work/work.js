@@ -18,15 +18,17 @@ const Work = () => {
           nulla numquam odio officia praesentium, ratione reprehenderit sit suscipit?
           Debitis esse fugit harum iste minima recusandae reiciendis totam unde vitae voluptatum?
           <NextLink href={'/'}>
-            <Link ml={3} color={useColorModeValue('cyan.600', 'orange.300')}>Link</Link>
+            <Link ml={3} color={useColorModeValue('cyan.600', '#64ffda')}>Link</Link>
           </NextLink>
         </Paragraph>
       </ContentWrapper>
       <Box align={'center'} my={10}>
         <NextLink href={'/'}>
           <Button
-            bg={useColorModeValue('cyan.600', 'orange.300')}
+            borderColor={useColorModeValue('cyan.600', '#64ffda')}
             padding={6}
+            color={useColorModeValue('cyan.600', '#64ffda')}
+            variant={'outline'}
             rightIcon={<ChevronRightIcon/>}>
             Connect with Me
           </Button>

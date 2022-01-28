@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./themeToggleButton";
+import {mode} from "@chakra-ui/theme-tools";
 
 const LinkItem = ({href, path, children}) => {
   const active = path === href
@@ -37,14 +38,15 @@ const NavBar = (props) => {
       position={'fixed'}
       as={'nav'}
       w={'100%'}
-      // bg={useColorModeValue('', '#202023')}
+      bg={useColorModeValue('#eee9e240', '#0a192f80')}
+      css={{ backdropFilter: 'blur(5px)' }}
       zIndex={1}
       {...props}
     >
       <Container
         display={'flex'}
         p={2}
-        maxW={'container.md'}
+        maxW={'container.xl'}
         wrap={'wrap'}
         align={'center'}
         justify={'space-between'}>
@@ -62,10 +64,10 @@ const NavBar = (props) => {
           mt={{base: 4, nmd: 0}}
         >
           <LinkItem href={'/contacts'} path={path}>
-            Contacts
+            01. Contacts
           </LinkItem>
           <LinkItem href={'/about'} path={path}>
-            About this project
+            02. About this project
           </LinkItem>
         </Stack>
         <Box flex={1} align={'right'}>

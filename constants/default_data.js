@@ -4,28 +4,21 @@ export const contacts_data = [
     className: 'git',
     iconWhite: 'white-github.png',
     iconBlack: 'dark-github.png',
-    maxW: '60px'
+    maxW: '30px'
   },
   {
     link: 'https://www.linkedin.com/in/roman-gavrilchuk-321791210/',
     className: 'linkDin',
     iconWhite: 'white-linkedin.png',
     iconBlack: 'dark-linkedin.png',
-    maxW: '60px'
+    maxW: '30px'
   },
   {
     link: 'https://t.me/Yep_Roman',
     className: 'tg',
     iconWhite: 'white-telegram.png',
     iconBlack: 'dark-telegram.png',
-    maxW: '60px'
-  },
-  {
-    link: '/',
-    className: 'mail',
-    iconWhite: 'white-google.png',
-    iconBlack: 'dark-google.png',
-    maxW: '60px'
+    maxW: '30px'
   },
 ]
 
@@ -49,6 +42,20 @@ export const tech_stack_data = [
   {
     title: 'Task Management:',
     stack: 'Git / GitLab / BitBucket / Jira / Trello'
+  },
+]
+export const language_data = [
+  {
+    title: 'English:',
+    stack: 'B1'
+  },
+  {
+    title: 'Russian:',
+    stack: 'Native Language'
+  },
+  {
+    title: 'Ukrainian:',
+    stack: 'Native Language'
   },
 ]
 

@@ -14,7 +14,7 @@ const ContentWrapper = ({children}) => {
       display={{md: 'flex'}}
       // text-align: start;
     >
-      <Text color={useColorModeValue('cyan.600', 'orange.300')} mr={2}>#</Text>
+      <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
       {children}
     </Box>
   )
