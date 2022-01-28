@@ -14,7 +14,7 @@ const MainInformation = () => {
       </Box>
       <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align={'center'}>
         <Image
-          borderColor={useColorModeValue('cyan.500', 'orange.300')}
+          borderColor={useColorModeValue('gray.400', 'white')}
           borderWidth={2}
           borderStyle={'solid'}
           maxWidth={'100px'}
