@@ -14,7 +14,7 @@ const TechStack = () => {
         <Heading as={'h3'} variant={'section-title'}>
           My tech_stack
         </Heading>
-        <ContentWrapper>
+        <ContentWrapper techStack>
           {renderTechItem(sliderValue)}
         </ContentWrapper>
       </Box>
