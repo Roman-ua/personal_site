@@ -7,7 +7,6 @@ import Section from "../../_shared/section";
 import CodingSvg from "../../../public/svg/coding";
 
 const Work = () => {
-  const [isMobile] = useMediaQuery("(max-width: 700px)")
   return(
     <Section delay={0.1}>
       <Heading as={'h3'} variant={'section-title'}>
@@ -21,8 +20,8 @@ const Work = () => {
           But pay attention now he works in the company Lunka.
         </Paragraph>
       </ContentWrapper>
-      <Box align={'center'} my={10}>
-        <Image src={'/images/Code.png'} maxW={isMobile ? 300 : 550}/>
+      <Box align={'center'} my={6}>
+        <Image src={'/images/Code.png'} w={[300, 400, 500]}/>
       </Box>
     </Section>
   )

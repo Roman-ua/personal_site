@@ -1,8 +1,23 @@
-import {Box, Slider, SliderFilledTrack, SliderThumb, SliderTrack, useColorModeValue} from "@chakra-ui/react";
+import {
+  Box,
+  Icon,
+  Slider,
+  SliderFilledTrack,
+  SliderThumb,
+  SliderTrack,
+  Text,
+  useColorModeValue
+} from "@chakra-ui/react";
+import {ChevronLeftIcon, ChevronRightIcon} from "@chakra-ui/icons";
 
 const RangeSlider = ({setSliderValue}) => {
   return (
-    <Box alignSelf={'center'} width={'20%'}>
+    <Box alignSelf={'center'} width={'30%'}>
+      <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'} mb={2}>
+        <Icon as={ChevronLeftIcon} color={'gray.400'}/>
+        <Text  fontSize={12} color={'gray.400'}># move me</Text>
+        <Icon as={ChevronRightIcon} color={'gray.400'}/>
+      </Box>
       <Slider
         aria-label='slider-ex-6'
         step={1}

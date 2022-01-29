@@ -1,7 +1,7 @@
 import {Box, Text, useColorModeValue} from "@chakra-ui/react";
 
 
-const ContentWrapper = ({children}) => {
+const ContentWrapper = ({children, techStack}) => {
   return (
     <Box
       borderRadius={'md'}
@@ -11,7 +11,7 @@ const ContentWrapper = ({children}) => {
       mb={1}
       align={'start'}
       color={useColorModeValue('gray.500', 'gray.400')}
-      display={{md: 'flex'}}
+      display={techStack ? {md: 'flex'} : 'flex'}
       alignItems={'flex-start'}
       justifyContent={'flex-start'}
     >

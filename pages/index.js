@@ -15,19 +15,16 @@ const HomePage = ({Component, pageProps, router}) => {
     <Container maxW={'container.md'} position={'relative'}>
       <PrintedText />
       <ContentWrapper>
-        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
+        <Text display={'inline-block'} color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
         <Text>Hello, I'm a front-end developer based in Ukraine!</Text>
       </ContentWrapper>
       <MainInformation />
-      <Box marginY={70}>
-        <TechStack />
-      </Box>
+      <TechStack />
       <Work />
       <Bio />
       <Languages />
       <Like />
       <Copyright />
-      <SocialMedia />
     </Container>
   )
 }
