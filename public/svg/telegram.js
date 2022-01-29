@@ -4,7 +4,7 @@ import {Box, useColorModeValue} from "@chakra-ui/react";
 const TelegramSvg = () => {
   return (
     <Box cursor={'pointer'} className={'tg'} borderRadius={40}>
-      <svg width="25" height="25" viewBox="0 0 25 25" fill={useColorModeValue('#000000', '#64ffda')}>
+      <svg width="30" height="30" viewBox="0 0 25 25" fill={useColorModeValue('#000000', '#64ffda')}>
         <path id="telegram-5" d="M12,0c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12Zm0,2c5.514,0
         10,4.486 10,10c0,5.514 -4.486,10 -10,10c-5.514,0 -10,-4.486 -10,-10c0,-5.514 4.486,-10 10,-10Zm2.692,14.889c0.161,0.115 0.368,0.143 0.553,0.073c0.185,-0.07
         0.322,-0.228 0.362,-0.42c0.435,-2.042 1.489,-7.211 1.884,-9.068c0.03,-0.14 -0.019,-0.285 -0.129,-0.379c-0.11,-0.093 -0.263,-0.12 -0.399,-0.07c-2.096,0.776

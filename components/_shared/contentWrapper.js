@@ -12,7 +12,7 @@ const ContentWrapper = ({children}) => {
       align={'start'}
       color={useColorModeValue('gray.500', 'gray.400')}
       display={{md: 'flex'}}
-      alignItems={'center'}
+      alignItems={'flex-start'}
       justifyContent={'flex-start'}
     >
       {children}

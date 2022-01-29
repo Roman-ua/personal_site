@@ -17,7 +17,7 @@ const MainInformation = () => {
           borderColor={useColorModeValue('gray.400', 'white')}
           borderWidth={2}
           borderStyle={'solid'}
-          maxWidth={'100px'}
+          maxWidth={'120px'}
           display={'inline-block'}
           borderRadius={'full'}
           src={'/images/avatar-second.jpg'}

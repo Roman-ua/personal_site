@@ -1,38 +1,28 @@
-import {Box, Button, Heading, Link, useColorModeValue} from "@chakra-ui/react";
+import {Box, Button, Heading, Image, Link, Text, useColorModeValue, useMediaQuery} from "@chakra-ui/react";
 import ContentWrapper from "../../_shared/contentWrapper";
 import Paragraph from "../../_shared/paragraph";
 import NextLink from "next/link";
 import {ChevronRightIcon} from "@chakra-ui/icons";
 import Section from "../../_shared/section";
+import CodingSvg from "../../../public/svg/coding";
 
 const Work = () => {
+  const [isMobile] = useMediaQuery("(max-width: 700px)")
   return(
     <Section delay={0.1}>
       <Heading as={'h3'} variant={'section-title'}>
         Work
       </Heading>
       <ContentWrapper>
-        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut, beatae cumque dolore eius,
-          nam nemo nostrum nulla optio, quas quod recusandae reiciendis tempora tenetur velit? Deserunt quia quibusdam
-          quos! A beatae eaque eos eveniet explicabo ipsam, magni minus
-          nulla numquam odio officia praesentium, ratione reprehenderit sit suscipit?
-          Debitis esse fugit harum iste minima recusandae reiciendis totam unde vitae voluptatum?
-          <NextLink href={'/'}>
-            <Link ml={3} color={useColorModeValue('cyan.600', '#64ffda')}>Link</Link>
-          </NextLink>
+        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
+        <Paragraph>Roman is a front-end developer based in Ukraine with a passion
+          for building digital services/stuff. He has experience in developing many projects.
+          And he will gladly help you in the realization of your plans.
+          But pay attention now he works in the company Lunka.
         </Paragraph>
       </ContentWrapper>
       <Box align={'center'} my={10}>
-        <NextLink href={'/'}>
-          <Button
-            borderColor={useColorModeValue('cyan.600', '#64ffda')}
-            padding={6}
-            color={useColorModeValue('cyan.600', '#64ffda')}
-            variant={'outline'}
-            rightIcon={<ChevronRightIcon/>}>
-            Connect with Me
-          </Button>
-        </NextLink>
+        <Image src={'/images/Code.png'} maxW={isMobile ? 300 : 550}/>
       </Box>
     </Section>
   )

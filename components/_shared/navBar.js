@@ -55,21 +55,21 @@ const NavBar = (props) => {
             <Logo />
           </Heading>
         </Flex>
-        <Stack
-          direction={{base: 'column', md: 'row'}}
-          display={{base: 'none', md: 'flex'}}
-          width={{base: 'full', md: 'auto'}}
-          alignItems={'center'}
-          flexGrow={1}
-          mt={{base: 4, nmd: 0}}
-        >
-          <LinkItem href={'/contacts'} path={path}>
-            01. Contacts
-          </LinkItem>
-          <LinkItem href={'/about'} path={path}>
-            02. About this project
-          </LinkItem>
-        </Stack>
+        {/*<Stack*/}
+        {/*  direction={{base: 'column', md: 'row'}}*/}
+        {/*  display={{base: 'none', md: 'flex'}}*/}
+        {/*  width={{base: 'full', md: 'auto'}}*/}
+        {/*  alignItems={'center'}*/}
+        {/*  flexGrow={1}*/}
+        {/*  mt={{base: 4, nmd: 0}}*/}
+        {/*>*/}
+        {/*  <LinkItem href={'/contacts'} path={path}>*/}
+        {/*    01. Contacts*/}
+        {/*  </LinkItem>*/}
+        {/*  <LinkItem href={'/about'} path={path}>*/}
+        {/*    02. About this project*/}
+        {/*  </LinkItem>*/}
+        {/*</Stack>*/}
         <Box flex={1} align={'right'}>
           <ThemeToggleButton />
           <Box ml={2} display={{base: 'inline-block', md: 'none'}}>

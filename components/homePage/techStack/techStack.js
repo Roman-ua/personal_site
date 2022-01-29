@@ -9,13 +9,15 @@ const TechStack = () => {
   const [sliderValue, setSliderValue] = useState(0)
   return (
     <Section delay={0.1}>
-      <RangeSlider setSliderValue={setSliderValue} />
-      <Heading as={'h3'} variant={'section-title'}>
-        My tech_stack
-      </Heading>
-      <ContentWrapper>
-        {renderTechItem(sliderValue)}
-      </ContentWrapper>
+      <Box display={'flex'} flexDir={'column'}>
+        <RangeSlider setSliderValue={setSliderValue} />
+        <Heading as={'h3'} variant={'section-title'}>
+          My tech_stack
+        </Heading>
+        <ContentWrapper>
+          {renderTechItem(sliderValue)}
+        </ContentWrapper>
+      </Box>
     </Section>
 )
 }

@@ -13,14 +13,5 @@ export const ItemBox = styled.div`
     -webkit-transform: translate(1px, -4px);
     -o-transform: translate(1px, -4px);
     -ms-transform: translate(1px, -4px);
-    .tg {
-      box-shadow: deepskyblue 0 0 25px 0;
-    }
-    .linkDin {
-      box-shadow: royalblue 0 0 25px 0;
-    }
-    .git {
-      box-shadow: purple 0 0 25px 0;
-    }
   }
 `

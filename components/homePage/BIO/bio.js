@@ -9,8 +9,9 @@ const renderItemBio = () => {
     return(
       <ContentWrapper key={item.year}>
         <BioSection>
+          <Text color={useColorModeValue('cyan.600', '#64ffda')}>#</Text>
           <BioYear>{item.year}</BioYear>
-          {item.data}
+          <Text>{item.data}</Text>
         </BioSection>
       </ContentWrapper>
     )
