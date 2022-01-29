@@ -1,4 +1,4 @@
-import {Box, Container, Text} from '@chakra-ui/react';
+import {Box, Container, Text, useColorModeValue} from '@chakra-ui/react';
 import ContentWrapper from "../components/_shared/contentWrapper";
 import MainInformation from '../components/homePage/mainInformation/mainInformation'
 import Work from "../components/homePage/work/work";
@@ -15,6 +15,7 @@ const HomePage = ({Component, pageProps, router}) => {
     <Container maxW={'container.md'} position={'relative'}>
       <PrintedText />
       <ContentWrapper>
+        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
         <Text>Hello, I'm a front-end developer based in Ukraine!</Text>
       </ContentWrapper>
       <MainInformation />

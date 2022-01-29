@@ -3,7 +3,7 @@ import {Box, useColorModeValue} from "@chakra-ui/react";
 const GitSvg = () => {
   return (
     <Box cursor={'pointer'} className={'git'} borderRadius={40}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill={useColorModeValue('#000000', '#64ffda')}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25" fill={useColorModeValue('#000000', '#64ffda')}>
         <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12
          12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104
          5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917

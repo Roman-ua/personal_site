@@ -1,18 +1,16 @@
-import {Box, Slider, SliderFilledTrack, SliderThumb, SliderTrack} from "@chakra-ui/react";
+import {Box, Slider, SliderFilledTrack, SliderThumb, SliderTrack, useColorModeValue} from "@chakra-ui/react";
 
 const RangeSlider = ({setSliderValue}) => {
   return (
-    <Box display={'flex'} alignContent={'flex-end'}>
+    <Box alignSelf={'center'} width={'20%'}>
       <Slider
-        alignSelf={'flex-end'}
-        maxW={'30%'}
         aria-label='slider-ex-6'
         step={1}
         min={0}
         max={4}
         onChange={(val) => setSliderValue(val)}>
-        <SliderTrack>
-          <SliderFilledTrack backgroundColor={'red'} />
+        <SliderTrack backgroundColor={useColorModeValue('gray.600', 'gray.300')}>
+          <SliderFilledTrack backgroundColor={useColorModeValue('cyan.600', '#64ffda')} />
         </SliderTrack>
         <SliderThumb />
       </Slider>

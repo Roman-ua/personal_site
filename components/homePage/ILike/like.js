@@ -1,4 +1,4 @@
-import {Heading} from "@chakra-ui/react";
+import {Heading, Text, useColorModeValue} from "@chakra-ui/react";
 import ContentWrapper from "../../_shared/contentWrapper";
 import Paragraph from "../../_shared/paragraph";
 import Section from "../../_shared/section";
@@ -10,6 +10,7 @@ const Like = () => {
         I like
       </Heading>
       <ContentWrapper>
+        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
         <Paragraph>Development, Tattoo, Music, Sport</Paragraph>
       </ContentWrapper>
     </Section>

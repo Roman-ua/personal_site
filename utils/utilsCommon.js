@@ -6,6 +6,7 @@ import {
   tech_stack_data_task_management
 } from "../constants/default_data";
 import TechStackItem from "../components/homePage/techStack/techStackItem";
+import {Text} from "@chakra-ui/react";
 
 export const renderTechItem = (currentItem) => {
   switch (currentItem) {

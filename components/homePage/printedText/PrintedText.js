@@ -40,7 +40,7 @@ const PrintedText = () => {
           startDelay={1200}
         />
         <Typed
-          strings={['JS;', 'TypeScript;', 'React.js;', 'ReactNative;', 'Next.js;', 'Front-End;']}
+          strings={['JS', 'TypeScript', 'React.js', 'ReactNative', 'Next.js', 'Front-End']}
           typeSpeed={50}
           backSpeed={30}
           showCursor={true}

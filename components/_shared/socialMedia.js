@@ -1,39 +1,34 @@
-import {contacts_data} from "../../constants/default_data";
 import ContactsItemWrapper from "../contacts/contactsItemWrapper";
-import {Box, Image, useColorModeValue, useMediaQuery} from "@chakra-ui/react";
+import {Box, useColorModeValue, useMediaQuery} from "@chakra-ui/react";
 import LinkSvg from "../../public/svg/link";
 import GitSvg from "../../public/svg/git";
 import TelegramSvg from "../../public/svg/telegram";
 
-// const renderItemContact = () => {
-//   return contacts_data.map((item)=>{
-//     return(
-//
-//         <Image
-//           maxW={item.maxW}
-//           src={useColorModeValue(`/icons/white/${item.iconWhite}`, `/icons/dark/${item.iconBlack}`)}/>
-//       </ContactsItemWrapper>
-//     )
-//   })
-// }
 const SocialMedia = () => {
-  const [isMobile] = useMediaQuery("(max-width: 900px)")
+  const [isMobile] = useMediaQuery("(max-width: 700px)")
   return (
-    <Box flexDir={'column'} alignItems={'center'} justifyContent={'center'} display={isMobile ? 'none' : 'flex'} position={'fixed'} left={20} bottom={0}>
-      <ContactsItemWrapper route={'/'}>
+    <Box
+      flexDir={'column'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      display={isMobile ? 'none' : 'flex'}
+      position={'fixed'}
+      left={20}
+      bottom={0}>
+      <ContactsItemWrapper route={'https://www.linkedin.com/in/roman-gavrilchuk-321791210/'}>
         <LinkSvg />
       </ContactsItemWrapper>
-      <ContactsItemWrapper route={'/'}>
+      <ContactsItemWrapper route={'https://github.com/Roman-ua'}>
         <GitSvg />
       </ContactsItemWrapper>
-      <ContactsItemWrapper route={'/'}>
+      <ContactsItemWrapper route={'https://t.me/Yep_Roman'}>
         <TelegramSvg />
       </ContactsItemWrapper>
       <Box
         width={'1px'}
-        height={'150px'}
+        height={'100px'}
         mt={3}
-        backgroundColor={useColorModeValue('cyan.600', '#64ffda')}
+        backgroundColor={useColorModeValue('black', '#64ffda')}
       />
     </Box>
   )
