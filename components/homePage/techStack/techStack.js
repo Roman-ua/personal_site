@@ -1,25 +1,21 @@
-import {Heading} from "@chakra-ui/react";
-import ContentWrapper from "../../_shared/contentWrapper";
+import {Box, Heading, Slider, SliderFilledTrack, SliderThumb, SliderTrack} from "@chakra-ui/react";
 import Section from "../../_shared/section";
-import {TechAttribute} from "./techStyled";
-import {tech_stack_data} from "../../../constants/default_data";
+import {useState} from "react";
+import {renderTechItem} from "../../../utils/utilsCommon";
+import RangeSlider from "../../_shared/rangeSlider";
+import ContentWrapper from "../../_shared/contentWrapper";
 
-const renderItemStack = () => {
-  return tech_stack_data.map((item)=>{
-    return (
-      <ContentWrapper key={item.title}>
-        <TechAttribute>{item.title}</TechAttribute> {item.stack}
-      </ContentWrapper>
-    )
-  })
-}
 const TechStack = () => {
+  const [sliderValue, setSliderValue] = useState(0)
   return (
     <Section delay={0.1}>
+      <RangeSlider setSliderValue={setSliderValue} />
       <Heading as={'h3'} variant={'section-title'}>
         My tech_stack
       </Heading>
-      {renderItemStack()}
+      <ContentWrapper>
+        {renderTechItem(sliderValue)}
+      </ContentWrapper>
     </Section>
 )
 }
