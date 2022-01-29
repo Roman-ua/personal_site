@@ -1,4 +1,4 @@
-import {Container, Text} from '@chakra-ui/react';
+import {Box, Container, Text} from '@chakra-ui/react';
 import ContentWrapper from "../components/_shared/contentWrapper";
 import MainInformation from '../components/homePage/mainInformation/mainInformation'
 import Work from "../components/homePage/work/work";
@@ -18,7 +18,9 @@ const HomePage = ({Component, pageProps, router}) => {
         <Text>Hello, I'm a front-end developer based in Ukraine!</Text>
       </ContentWrapper>
       <MainInformation />
-      <TechStack />
+      <Box marginY={70}>
+        <TechStack />
+      </Box>
       <Work />
       <Bio />
       <Languages />

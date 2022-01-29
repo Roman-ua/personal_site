@@ -12,9 +12,9 @@ const ContentWrapper = ({children}) => {
       align={'start'}
       color={useColorModeValue('gray.500', 'gray.400')}
       display={{md: 'flex'}}
-      // text-align: start;
+      alignItems={'center'}
+      justifyContent={'flex-start'}
     >
-      <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
       {children}
     </Box>
   )

@@ -21,29 +21,93 @@ export const contacts_data = [
     maxW: '30px'
   },
 ]
-
-export const tech_stack_data = [
+export const tech_stack_data_coding = [
   {
-    title: 'Coding:',
-    stack: 'TypeScript / JS / HTML5 / CSS3 / SCSS'
+    abr: 'TS',
+    title: 'TypeScript'
   },
   {
-    title: 'Frameworks & libraries:',
-    stack: 'React / ReactNative / Next / Redux / ChakraUI / ThreeJS'
+    abr: 'JS',
+    title: 'JavaScript'
   },
   {
-    title: 'API:',
-    stack: 'REST / GraphQL'
+    abr: 'HTML',
+    title: 'HTML5'
   },
   {
-    title: 'Databases:',
-    stack: 'Firebase'
+    abr: 'CSS',
+    title: 'CSS3'
   },
   {
-    title: 'Task Management:',
-    stack: 'Git / GitLab / BitBucket / Jira / Trello'
+    abr: 'SCSS',
+    title: 'SCSS'
+  }
+]
+export const tech_stack_data_frameworks = [
+  {
+    abr: 'RC',
+    title: 'React'
+  },
+  {
+    abr: 'RN',
+    title: 'ReactNative'
+  },
+  {
+    abr: 'NX',
+    title: 'Next.js'
+  },
+  {
+    abr: 'RX',
+    title: 'Redux'
+  },
+  {
+    abr: 'CUI',
+    title: 'ChakraUI'
+  },
+  {
+    abr: 'TW',
+    title: 'Tailwind.css'
+  }
+]
+export const tech_stack_data_api = [
+  {
+    abr: 'GQL',
+    title: 'GraphQL'
+  },
+  {
+    abr: 'RST',
+    title: 'REST'
   },
 ]
+export const tech_stack_data_dataBase = [
+  {
+    abr: 'FRB',
+    title: 'Firebase'
+  },
+]
+export const tech_stack_data_task_management = [
+  {
+    abr: 'Git',
+    title: 'Git'
+  },
+  {
+    abr: 'GitLab',
+    title: 'GitLab'
+  },
+  {
+    abr: 'BitBucket',
+    title: 'BitBucket'
+  },
+  {
+    abr: 'Jira',
+    title: 'Jira'
+  },
+  {
+    abr: 'Trello',
+    title: 'Trello'
+  }
+]
+
 export const language_data = [
   {
     title: 'English:',
