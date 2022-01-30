@@ -18,17 +18,17 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./themeToggleButton";
 import {mode} from "@chakra-ui/theme-tools";
 
-const LinkItem = ({href, path, children}) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray', 'whiteAlpha.900')
-  return (
-    <NextLink href={href}>
-      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
+// const LinkItem = ({href, path, children}) => {
+//   const active = path === href
+//   const inactiveColor = useColorModeValue('gray', 'whiteAlpha.900')
+//   return (
+//     <NextLink href={href}>
+//       <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>
+//         {children}
+//       </Link>
+//     </NextLink>
+//   )
+// }
 
 
 const NavBar = (props) => {
@@ -38,7 +38,7 @@ const NavBar = (props) => {
       position={'fixed'}
       as={'nav'}
       w={'100%'}
-      bg={useColorModeValue('#eee9e240', '#0a192f80')}
+      bg={useColorModeValue('navbarLight', 'navBarDark')}
       css={{ backdropFilter: 'blur(5px)' }}
       zIndex={1}
       {...props}
@@ -77,14 +77,14 @@ const NavBar = (props) => {
               <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant={'outline'} aria-label={'Options'} />
               <MenuList>
                 <NextLink href={'/'} passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Coming sun ...</MenuItem>
                 </NextLink>
-                <NextLink href={'/contacts'} passHref>
-                  <MenuItem as={Link}>Contacts</MenuItem>
-                </NextLink>
-                <NextLink href={'/about'} passHref>
-                  <MenuItem as={Link}>About this project</MenuItem>
-                </NextLink>
+                {/*<NextLink href={'/contacts'} passHref>*/}
+                {/*  <MenuItem as={Link}>Contacts</MenuItem>*/}
+                {/*</NextLink>*/}
+                {/*<NextLink href={'/about'} passHref>*/}
+                {/*  <MenuItem as={Link}>About this project</MenuItem>*/}
+                {/*</NextLink>*/}
               </MenuList>
             </Menu>
           </Box>

@@ -14,9 +14,9 @@ const RangeSlider = ({setSliderValue}) => {
   return (
     <Box alignSelf={'center'} width={'30%'}>
       <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'} mb={2}>
-        <Icon as={ChevronLeftIcon} color={'gray.400'}/>
-        <Text  fontSize={12} color={'gray.400'}># move me</Text>
-        <Icon as={ChevronRightIcon} color={'gray.400'}/>
+        <Icon as={ChevronLeftIcon} color={'textColorLight'}/>
+        <Text  fontSize={12} color={'textColorLight'}># move me</Text>
+        <Icon as={ChevronRightIcon} color={'textColorLight'}/>
       </Box>
       <Slider
         aria-label='slider-ex-6'
@@ -24,8 +24,8 @@ const RangeSlider = ({setSliderValue}) => {
         min={0}
         max={4}
         onChange={(val) => setSliderValue(val)}>
-        <SliderTrack backgroundColor={useColorModeValue('gray.600', 'gray.300')}>
-          <SliderFilledTrack backgroundColor={useColorModeValue('cyan.600', '#64ffda')} />
+        <SliderTrack backgroundColor={useColorModeValue('bgItemDark', 'textColorLight')}>
+          <SliderFilledTrack backgroundColor={useColorModeValue('cyanDefault', 'cyanLight')} />
         </SliderTrack>
         <SliderThumb />
       </Slider>

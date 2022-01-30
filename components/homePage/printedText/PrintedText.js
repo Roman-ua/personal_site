@@ -13,10 +13,10 @@ const PrintedText = () => {
       mb={10}
       position={'relative'}
     >
-      <Box backgroundColor={useColorModeValue('gray.700', 'whiteAlpha.900')} position={'absolute'} top={0} left={0} right={0} borderTopRadius={7} display={'flex'} padding={2}>
-        <Box w={3} h={3} borderRadius={30} backgroundColor={'red.400'}/>
-        <Box w={3} h={3} borderRadius={30} backgroundColor={'yellow.400'} marginX={2}/>
-        <Box w={3} h={3} borderRadius={30} backgroundColor={'green.400'}/>
+      <Box backgroundColor={useColorModeValue('bgItemDark', 'bgItemLight')} position={'absolute'} top={0} left={0} right={0} borderTopRadius={7} display={'flex'} padding={2}>
+        <Box w={3} h={3} borderRadius={30} backgroundColor={'buttonClose'}/>
+        <Box w={3} h={3} borderRadius={30} backgroundColor={'buttonHide'} marginX={2}/>
+        <Box w={3} h={3} borderRadius={30} backgroundColor={'buttonCollapse'}/>
       </Box>
       <Box display={'flex'} pt={'20px'}>
         <Typed

@@ -5,12 +5,12 @@ const ContentWrapper = ({children, techStack}) => {
   return (
     <Box
       borderRadius={'md'}
-      bg={useColorModeValue('whiteAlpha.900', 'gray.700')}
+      bg={useColorModeValue('bgItemLight', 'bgItemDark')}
       paddingY={3}
       paddingX={5}
       mb={1}
       align={'start'}
-      color={useColorModeValue('gray.500', 'gray.400')}
+      color={useColorModeValue('textColorLight', 'textColorDark')}
       display={techStack ? {md: 'flex'} : 'flex'}
       alignItems={'flex-start'}
       justifyContent={'flex-start'}

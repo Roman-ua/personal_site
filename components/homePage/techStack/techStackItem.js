@@ -1,4 +1,4 @@
-import {Box, Text, useColorModeValue} from "@chakra-ui/react";
+import {Box, Text} from "@chakra-ui/react";
 import {TechItemStyled} from "./techItemStyled";
 
 const TechStackItem = ({abr, title}) => {
@@ -9,7 +9,7 @@ const TechStackItem = ({abr, title}) => {
         className={'title'}
         borderRadius={5}
         borderWidth={1}
-        borderColor={'#64ffda'}
+        borderColor={'cyanLight'}
         position={'absolute'}
         w={'100%'}
         h={'100%'}

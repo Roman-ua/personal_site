@@ -36,7 +36,20 @@ const fonts = {
 }
 
 const colors = {
-  glassTeal: '#88ccca'
+  // glassTeal: '#88ccca',
+  dark: '#0a192f',
+  gray: '#8892b0',
+  navBarDark: '#0a192f80',
+  navBarLight: '#eee9e240',
+  cyanLight: '#64ffda',
+  cyanDefault: '#00A3C4',
+  bgItemLight: '#F7FAFC',//gray.50
+  bgItemDark: '#2D3748',//gray.700
+  textColorDark: '#A0AEC0',//gray.500
+  textColorLight: '#718096',//gray.400
+  buttonClose: '#F56565', //red.400,
+  buttonHide: '#ECC94B', //yellow.400
+  buttonCollapse: '#48BB78'//green.400
 }
 
 const config = {

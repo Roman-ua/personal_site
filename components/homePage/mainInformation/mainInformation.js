@@ -9,16 +9,15 @@ const MainInformation = () => {
         </Heading>
         <Box display={'flex'}>
           <Text mr={2}>Digital Craftsman</Text>
-          <Text color={'gray.500'}>#Creative Developer</Text>
+          <Text color={'textColorDark'}>#Creative Developer</Text>
         </Box>
       </Box>
       <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align={'center'}>
         <Image
-          borderColor={useColorModeValue('gray.400', 'white')}
+          borderColor={useColorModeValue('textColorLight', 'white')}
           borderWidth={2}
           borderStyle={'solid'}
           w={[200, 180, 120]}
-          // maxWidth={'120px'}
           display={'inline-block'}
           borderRadius={'full'}
           src={'/images/avatar-second.jpg'}

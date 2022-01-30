@@ -10,7 +10,7 @@ const Like = () => {
         I like
       </Heading>
       <ContentWrapper>
-        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
+        <Text color={useColorModeValue('cyanDefault', 'cyanLight')} mr={2}>#</Text>
         <Paragraph>Development, Tattoo, Music, Sport</Paragraph>
       </ContentWrapper>
     </Section>

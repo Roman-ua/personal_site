@@ -8,7 +8,7 @@ const renderItemStack = () => {
   return language_data.map((item)=>{
     return (
       <ContentWrapper key={item.title}>
-        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
+        <Text color={useColorModeValue('cyanDefault', 'cyanLight')} mr={2}>#</Text>
         <Language>{item.title}</Language> {item.stack}
       </ContentWrapper>
     )
