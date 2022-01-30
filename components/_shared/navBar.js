@@ -40,7 +40,7 @@ const NavBar = (props) => {
       w={'100%'}
       bg={useColorModeValue('navbarLight', 'navBarDark')}
       css={{ backdropFilter: 'blur(5px)' }}
-      zIndex={1}
+      zIndex={3}
       {...props}
     >
       <Container
