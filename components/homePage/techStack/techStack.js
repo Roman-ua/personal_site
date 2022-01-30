@@ -1,4 +1,4 @@
-import {Box, Heading, Slider, SliderFilledTrack, SliderThumb, SliderTrack} from "@chakra-ui/react";
+import {Box, Heading} from "@chakra-ui/react";
 import Section from "../../_shared/section";
 import {useState} from "react";
 import {renderTechItem} from "../../../utils/utilsCommon";

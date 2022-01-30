@@ -1,10 +1,7 @@
-import {Box, Button, Heading, Image, Link, Text, useColorModeValue, useMediaQuery} from "@chakra-ui/react";
+import {Box, Button, Heading, Image, Link, Text, useColorModeValue} from "@chakra-ui/react";
 import ContentWrapper from "../../_shared/contentWrapper";
 import Paragraph from "../../_shared/paragraph";
-import NextLink from "next/link";
-import {ChevronRightIcon} from "@chakra-ui/icons";
 import Section from "../../_shared/section";
-import CodingSvg from "../../../public/svg/coding";
 
 const Work = () => {
   return(
@@ -13,7 +10,7 @@ const Work = () => {
         Work
       </Heading>
       <ContentWrapper>
-        <Text color={useColorModeValue('cyan.600', '#64ffda')} mr={2}>#</Text>
+        <Text color={useColorModeValue('cyanDefault', 'cyanLight')} mr={2}>#</Text>
         <Paragraph>Roman is a front-end developer based in Ukraine with a passion
           for building digital services/stuff. He has experience in developing many projects.
           And he will gladly help you in the realization of your plans.

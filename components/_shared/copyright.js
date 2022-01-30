@@ -6,7 +6,7 @@ const Copyright = () => {
     <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'} padding={3} zIndex={1}>
       <SocialMedia />
       <Text
-        color={useColorModeValue('cyan.600', '#64ffda')}
+        color={useColorModeValue('cyanDefault', 'cyanLight')}
         fontSize={12}
         fontWeight={300}>&#169; Havrilchuk Roman</Text>
     </Box>

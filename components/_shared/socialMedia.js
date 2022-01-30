@@ -1,11 +1,10 @@
 import ContactsItemWrapper from "../contacts/contactsItemWrapper";
-import {Box, useColorModeValue, useMediaQuery} from "@chakra-ui/react";
+import {Box} from "@chakra-ui/react";
 import LinkSvg from "../../public/svg/link";
 import GitSvg from "../../public/svg/git";
 import TelegramSvg from "../../public/svg/telegram";
 
 const SocialMedia = () => {
-  const [isMobile] = useMediaQuery("(max-width: 700px)")
   return (
     <Box display={'flex'}>
       <ContactsItemWrapper route={'https://www.linkedin.com/in/roman-gavrilchuk-321791210/'}>
