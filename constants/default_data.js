@@ -111,11 +111,7 @@ export const tech_stack_data_task_management = [
 export const language_data = [
   {
     title: 'English:',
-    stack: 'B1'
-  },
-  {
-    title: 'Russian:',
-    stack: 'Native Language'
+    stack: 'B1+'
   },
   {
     title: 'Ukrainian:',
@@ -135,10 +131,14 @@ export const bio_data = [
   },
   {
     year: '2020',
-    data: 'Works as a freelance'
+    data: 'Worked as a freelance'
   },
   {
-    year: '2021 to present',
-    data: 'I work as a front-end developer at Lunka company'
+    year: '2021',
+    data: 'Worked as a front-end developer at Lunka company'
   },
+  {
+    year: '2022 to present',
+    data: 'I have been working as a front-end engineer at ONIX company'
+  }
 ]

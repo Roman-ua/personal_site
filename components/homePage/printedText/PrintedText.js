@@ -1,4 +1,4 @@
-import {Box, useColorModeValue} from "@chakra-ui/react";
+import {Box, useColorModeValue, Text} from "@chakra-ui/react";
 import Typed from 'react-typed';
 
 const PrintedText = () => {
@@ -26,7 +26,7 @@ const PrintedText = () => {
           style={{marginRight: '5px', color: 'darkorange'}}
         />
         <Typed
-          strings={['best_tech']}
+          strings={['front_end']}
           typeSpeed={50}
           showCursor={false}
           style={{marginRight: '5px', fontWeight: 'bold', color: 'cyan'}}
