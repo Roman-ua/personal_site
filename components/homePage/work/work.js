@@ -14,7 +14,7 @@ const Work = () => {
         <Paragraph>Roman is a front-end developer based in Ukraine with a passion
           for building digital services/stuff. He has experience in developing many projects.
           And he will gladly help you in the realization of your plans.
-          But pay attention now he works in the company Lunka.
+          But pay attention now he works in the company ONIX.
         </Paragraph>
       </ContentWrapper>
       <Box align={'center'} my={6}>
