@@ -1,7 +1,6 @@
 # Personal_Site
 My little resume.
-Right now it's a simple project, but this project will always grow. You can see it in the commits.
-If you are a developer, clone this repository and follow the commands
+Right now it's a simple project, but this project will always grow.
 ## Available Scripts
 
 In the project directory, you can run:
